@@ -1,0 +1,12 @@
+services:
+  blazor-docker:
+    restart: always
+    container_name: blazor-docker
+    image: blazor-docker
+    ports:
+      - 7000:8080
+    build:
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ENVIRONMENT_NAME: Development

@@ -10,3 +10,4 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ENVIRONMENT_NAME: Development
+      Title: "Value from environment"
